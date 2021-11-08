@@ -1,0 +1,17 @@
+version: '3'
+services:
+  basket:
+    image: cadotinfo/nodejs
+    container_name: basket
+    volumes:
+      - .:/app
+    networks:
+      - web
+    restart: always
+    ports:
+      - 80
+
+
+networks:
+  web:
+    external: true

@@ -1,0 +1,79 @@
+Arguments: 
+  /usr/bin/node /usr/local/bin/yarn add @babel/core -D
+
+PATH: 
+  /home/michael/sites/test2/node_modules/.bin:/home/michael/sites/node_modules/.bin:/home/michael/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/home/michael/.composer/vendor/bin:/home/michael/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  12.18.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/michael/sites/test2/package.json: Unexpected token } in JSON at position 498
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "cadoot-info-like",
+    "version": "1.0.0",
+    "description": "A javascript like with cookies and ajax possibility",
+    "author": {
+      "name": "cadot.info"
+    },
+    "license": "ISC",
+    "main": "src/index.js",
+    "scripts": {
+      "clean": "rimraf ./dist",
+      "format": "prettier --write src/**/*.{js,json,md}",
+      "build": "npm run clean && parcel build src/index.html --no-minify --no-source-maps",
+      "start": "parcel -p 8080 --hmr-port 8081 src/index.html --open",
+      "test": "jest",
+    },
+    "keywords": [
+      "javascript",
+      "like","favorites"
+    ],
+    "homepage": "https://github.com/cadot-info/like#readme",
+    "bugs": {
+      "url": "https://github.com/cadot-info/like/issues"
+    },
+  
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/cadot-info/like.git"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.11.6",
+      "@babel/preset-env": "^7.11.5",
+      "eslint": "^6.8.0",
+      "eslint-config-airbnb-base": "^14.2.0",
+      "eslint-config-prettier": "^6.11.0",
+      "eslint-plugin-import": "^2.22.0",
+      "eslint-plugin-prettier": "^3.1.4",
+      "node-sass": "^4.14.1",
+      "parcel": "^1.12.4",
+      "prettier": "^1.19.1",
+      "rimraf": "^3.0.2"
+    },
+    "dependencies": {
+      "fs": "^0.0.1-security",
+      "jest": "^27.3.1",
+      "jsdom": "^18.0.0",
+      "path": "^0.12.7"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

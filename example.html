@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Basket test</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root">
+      <h1>Basket<span id="nbrProducts"></span></h1>
+      <ul id="listProducts"></ul>
+      <p id="totalProducts"></p>
+    </div>
+    <h2>Products</h2>
+        <button
+          class="addBasket"
+          data-id="prod-1"
+          data-name="Flour of corn"
+          data-price="12.12"
+          data-opts='{"¤delivered":"4 days","color":["green","red"]}'
+          >Flour</button>
+          <button data-id="prod-1" class="remBasket">remove</button>
+        <button
+          class="addBasket"
+          data-id="prod-2"
+          data-name="honey best quality"
+          data-price="3.33"
+          data-opts='{"¤delivered":"Immediatly","color":["green","red"]}'
+          >honey</button>
+          <button data-id="prod-2" class="remBasket">remove</button>
+        <button
+          class="addBasket"
+          data-id="prod-3"
+          data-name="wine bordeaux 2016"
+          data-price="1.11"
+          data-opts='{"¤warning":"allergen sulfite"}'
+          >wine</button>
+          <button data-id="prod-3" class="remBasket">remove</button>
+
+  </body>
+</html>

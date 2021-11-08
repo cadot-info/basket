@@ -1,0 +1,31 @@
+{
+    "title": "Like library",
+    "name": "cadot-info-like",
+    "homepage": "https://github.com/cadot-info/like",
+    "description": "A javascript like with cookies and ajax possibility",
+    "license": "MIT",
+    "author": "2021+ Cadot.info ltd <npm@cadot.info> (https://cadot.info)",
+    "maintainers": [
+        "Cadot.info (npm@cadot.info) (https://cadot.info)"
+    ],
+    "sponsors": [
+    ],
+    "contributors": [
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cadot-info/like.git"
+    },
+    "badges": {
+        "list": [
+            "npmversion",
+            "npmdownloads",
+            "---",
+            "paypal"
+        ],
+        "config": {
+            "paypalURL": "https://www.paypal.com/donate?hosted_button_id=E9S29AEA3HGXQ"
+        }
+    }
+
+}

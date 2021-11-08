@@ -1,0 +1,54 @@
+{
+  "name": "cadot-info-like",
+  "version": "2.0.3",
+  "description": "A javascript like with cookies and ajax possibility",
+  "author": "2021+ Cadot.info ltd <npm@cadot.info> (https://cadot.info)",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "format": "prettier --write src/**/*.{js,json,md}",
+    "build": "npm run compile && npm run clean ",
+    "test": "jest",
+    "compile": "projectz compile",
+    "posttest": "npm run compile"
+  },
+  "keywords": [
+    "javascript",
+    "like",
+    "favorite"
+  ],
+  "homepage": "https://github.com/cadot-info/like#readme",
+  "bugs": {
+    "url": "https://github.com/cadot-info/like/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cadot-info/like.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "fs": "^0.0.1-security",
+    "jest": "^27.3.1",
+    "jsdom": "^18.0.0",
+    "path": "^0.12.7",
+    "projectz": "^2.22.0"
+  },
+  "maintainers": [
+    "Cadot.info (npm@cadot.info) (https://cadot.info)"
+  ],
+  "contributors": [],
+  "files": [
+    "dist/",
+    "src/",
+    "package.json",
+    "README.md",
+    "LICENSE.md",
+    "index.js"
+  ]
+}
