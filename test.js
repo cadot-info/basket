@@ -20,7 +20,7 @@ test('var by default', () => {
   basket.init();
     expect(basket.getParameters()).toBe("addBasketremBasketnbrProductslistProductstotalPriceProductsnbrTotalProducts");
 
-  expect(document.getElementById('nbrProducts').textContent).toBe("");
+  expect(document.getElementById('nbrProducts').textContent).toBe("0");
   //add object
   document.querySelectorAll(".addBasket")[0].click();
   expect(basket.get()).toStrictEqual([{"id": "prod-1", "name": "Flour of corn", "opts": "{\"¤delivered\":\"4 days\",\"color\":\"green\"}", "price": "12.12", "quantity": 1}]);
@@ -59,8 +59,16 @@ test('var by default', () => {
  expect(document.getElementById('listProducts').innerHTML).toBe("<li><span class=\"productName\">wine bordeaux 2016</span><span class=\"productQuantity\">1</span><span class=\"productOpts\">warning,color</span><span class=\"productPrice\">1.11</span></li>");
  expect(document.getElementById('totalPriceProducts').textContent).toBe("1.11");
 
-//verify count on document
+ //verify count on document
  expect(document.getElementById('nbrProducts').textContent).toBe("1");
  expect(document.getElementById('nbrTotalProducts').textContent).toBe("1");
+
+  //clear basket
+  document.getElementById("clearbasket").click();
+  expect(basket.get()).toStrictEqual(false);
+ expect(document.getElementById('listProducts').innerHTML).toBe("");
+ expect(document.getElementById('totalPriceProducts').textContent).toBe("0.00");
+  expect(document.getElementById('nbrProducts').textContent).toBe("0");
+  expect(document.getElementById('nbrTotalProducts').textContent).toBe("0");
 
 });

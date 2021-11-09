@@ -1,4 +1,4 @@
-var ButtonAddClass, ButtonRemClass, IdnbrProducts, ClassList, IdtotalProducts, IdnbrTotalProducts,lineobjet;
+var ButtonAddClass, ButtonRemClass, IdnbrProducts, ClassList, IdtotalProducts, IdnbrTotalProducts, lineobjet;
 
 const basket = {
   /* -------------------------------------------------------------------------- */
@@ -47,8 +47,15 @@ const basket = {
     /* ----------------------- init presenttaion of line ----------------------- */
     lineobjet = document.getElementById('listProducts').firstElementChild.cloneNode(true); //contain the presentation of objet
 
-    
-
+    /* ------------------------------ clear button ------------------------------ */
+    document.getElementById('clearbasket').addEventListener(
+      'click',
+      function () {
+        basket.clear(this); //add action for change cookie
+        basket.update();
+      },
+      false
+    );
 
     /* ---------------------------- update the basket --------------------------- */
     basket.update();
@@ -148,14 +155,15 @@ const basket = {
   /*                       update in document the counters                      */
   /* -------------------------------------------------------------------------- */
   update() {
-    //remove childs
-    document.getElementById('listProducts').innerHTML="";
+    
+    let total = 0;
+    let totaltype = 0;
+    let totalprice = 0;
+/* --------------------------------- calcul --------------------------------- */
+    document.getElementById('listProducts').innerHTML = '';
     let cookie = checkACookieExists('basket');
     if (cookie != false) {
-      /* --------------------------------- calcul --------------------------------- */
-      let total = 0;
-      let totaltype = 0;
-      let totalprice=0;
+      
       /* ---------------------------------- loop ---------------------------------- */
       cookie.forEach((element) => {
         //nbr total of objects
@@ -163,41 +171,37 @@ const basket = {
         //nbr type objetcts
         totaltype += 1;
         /* ---------------------------- create line objet --------------------------- */
-        let lineFull=lineobjet.cloneNode(true);
+        let lineFull = lineobjet.cloneNode(true);
         lineFull.getElementsByClassName('productName')[0].innerHTML = element.name;
         lineFull.getElementsByClassName('productQuantity')[0].innerHTML = element.quantity;
         //catch option with ¤
-        let res=""; //stocke opt visible
+        let res = ''; //stocke opt visible
         for (var e in JSON.parse(element.opts)) {
-          if(e.charAt(0)=='¤')
-          res+=e.substring(1)+',';
-        };
-        lineFull.getElementsByClassName('productOpts')[0].innerHTML =res.substring(0,res.length-1);
-        lineFull.getElementsByClassName('productPrice')[0].innerHTML = element.quantity*element.price;
-        totalprice+=element.quantity*element.price;
-        
-        document.getElementById('listProducts').appendChild(lineFull)
+          if (e.charAt(0) == '¤') res += e.substring(1) + ',';
+        }
+        lineFull.getElementsByClassName('productOpts')[0].innerHTML = res.substring(0, res.length - 1);
+        lineFull.getElementsByClassName('productPrice')[0].innerHTML = element.quantity * element.price;
+        totalprice += element.quantity * element.price;
 
-        
+        document.getElementById('listProducts').appendChild(lineFull);
       });
-      /* ----------------------------- update document ---------------------------- */
-      if (
-        typeof document.getElementById(IdnbrTotalProducts) != 'undefined' &&
-        document.getElementById(IdnbrTotalProducts) != null
-      )
-        document.getElementById(IdnbrTotalProducts).textContent = totaltype;
-      if (
-        typeof document.getElementById(IdnbrProducts) != 'undefined' &&
-        document.getElementById(IdnbrProducts) != null
-      )
-        document.getElementById(IdnbrProducts).textContent = total;
-        if (
-          typeof document.getElementById(IdtotalProducts) != 'undefined' &&
-          document.getElementById(IdtotalProducts) != null
-        )
-        document.getElementById(IdtotalProducts).textContent = totalprice.toFixed(2);
-      return true;
-    } else return false;
+    }
+     /* ----------------------------- update document ---------------------------- */
+     if (
+      typeof document.getElementById(IdnbrTotalProducts) != 'undefined' &&
+      document.getElementById(IdnbrTotalProducts) != null
+    )
+      document.getElementById(IdnbrTotalProducts).textContent = totaltype;
+    if (
+      typeof document.getElementById(IdnbrProducts) != 'undefined' &&
+      document.getElementById(IdnbrProducts) != null
+    )
+      document.getElementById(IdnbrProducts).textContent = total;
+    if (
+      typeof document.getElementById(IdtotalProducts) != 'undefined' &&
+      document.getElementById(IdtotalProducts) != null
+    )
+      document.getElementById(IdtotalProducts).textContent = totalprice.toFixed(2);
   },
 };
 
