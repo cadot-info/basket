@@ -1,6 +1,6 @@
 {
     "title": "basket library",
-    "name": "cadot-info-like",
+    "name": "cadot-info-basket",
     "homepage": "https://github.com/cadot-info/like",
     "description": "A javascript basket with cookies and create html",
     "license": "MIT",
