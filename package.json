@@ -1,6 +1,6 @@
 {
   "name": "cadot-info-basket",
-"version":"v1.0.19",
+"version":"1.0.20",
   "description": "A javascript basket with cookies and create html basket",
   "author": "2021+ Cadot.info ltd <npm@cadot.info> (https://cadot.info)",
   "license": "MIT",
@@ -15,8 +15,7 @@
   },
   "keywords": [
     "javascript",
-    "like",
-    "favorite"
+    "basket","panier","pay"
   ],
   "homepage": "https://github.com/cadot-info/like#readme",
   "bugs": {
