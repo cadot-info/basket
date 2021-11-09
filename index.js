@@ -182,7 +182,7 @@ const basket = {
         lineFull.getElementsByClassName('productQuantity')[0].innerHTML = element.quantity;
         //catch option with ¤
         let res = ''; //stocke opt visible
-        if(isObject(JSON.parse(element.opts)))
+        if(isObject(element.opts))
         for (var e in JSON.parse(element.opts)) {
           if (e.charAt(0) == '¤') res += e.substring(1) + ',';
         }

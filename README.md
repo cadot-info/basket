@@ -76,7 +76,7 @@ notes:
 #### a button for add a product
 `<button class="addBasket" data-id="prod-1" data-name="Flour of corn" data-price="12.12" data-opts='{"¤delivered":"4 days","color":"green"}'>Flour</button>`
 note:
--data-id, data-name, data-price and data-opts is necessary
+-data-id, data-name and data-price  is necessary
 -data-opts can set in basket a visible option (by the ¤ in first) and hidden option by other
 
 #### a button for remove
