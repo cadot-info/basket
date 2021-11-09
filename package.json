@@ -1,7 +1,7 @@
 {
   "name": "cadot-info-basket",
-  "version":"1.0.30",
-  "description": "A javascript basket with cookies and create html basket",
+  "version":"1.0.31",
+  "description": "A javascript basket with cookies and create html",
   "author": "2021+ Cadot.info ltd <npm@cadot.info> (https://cadot.info)",
   "license": "MIT",
   "main": "src/index.js",
@@ -19,13 +19,13 @@
     "panier",
     "pay"
   ],
-  "homepage": "https://github.com/cadot-info/like#readme",
+  "homepage": "https://github.com/cadot-info/basket#readme",
   "bugs": {
-    "url": "https://github.com/cadot-info/like/issues"
+    "url": "https://github.com/cadot-info/basket.git/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cadot-info/like.git"
+    "url": "https://github.com/cadot-info/basket.git"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",

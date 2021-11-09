@@ -8,10 +8,9 @@
     "maintainers": [
         "Cadot.info (npm@cadot.info) (https://cadot.info)"
     ],
-    "sponsors": [
-    ],
-    "contributors": [
-    ],
+    "bugs": {
+        "url": "https://github.com/cadot-info/basket.git/issues"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/cadot-info/basket.git"
