@@ -1,3 +1,6 @@
+const { existsSync } = require("fs");
+const { exit } = require("process");
+
 var ButtonAddClass, ButtonRemClass, IdnbrProducts, ClassList, IdtotalProducts, IdnbrTotalProducts, lineobjet;
 
 const basket = {
@@ -18,7 +21,12 @@ const basket = {
     ClassList = init_ClassList;
     IdtotalProducts = init_IdtotalProducts;
     IdnbrTotalProducts = init_IdnbrTotalProducts;
-
+    // control presence of div basket
+    if (
+      typeof document.getElementById('basket') == 'undefined' ||
+      document.getElementById('basket') == null
+    )
+    exit;
     /* ----------------------------- init the cookie ---------------------------- */
     let cookie = checkACookieExists('basket');
     if (cookie == false) cookie = [];
