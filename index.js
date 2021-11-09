@@ -182,7 +182,7 @@ const basket = {
         lineFull.getElementsByClassName('productQuantity')[0].innerHTML = element.quantity;
         //catch option with ¤
         let res = ''; //stocke opt visible
-        if(isObject(element.opts))
+        if(isEmpty(element.opts) && element.opts!='')
         for (var e in JSON.parse(element.opts)) {
           if (e.charAt(0) == '¤') res += e.substring(1) + ',';
         }
@@ -224,6 +224,9 @@ function checkACookieExists() {
 
 module.exports = basket;
 
+function isEmpty(obj) {
+  return obj!= undefined && obj !== null;
+}
 function isObject(obj)
 {
     return obj !== undefined && obj !== null && obj.constructor == Object;
