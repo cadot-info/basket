@@ -13,7 +13,7 @@ beforeAll(() => {
 
 test('var by default', () => {
   //init for tests
-  basket.clear();
+  //basket.clear();
   //test parameters not possible because lineobjet is modified
   //basket.init('aaa','zzz', 'yes', 'no', 'bbb','cccc');
   //expect(basket.getParameters()).toBe('aaazzzyesnobbbcccc');

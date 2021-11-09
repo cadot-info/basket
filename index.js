@@ -170,7 +170,6 @@ const basket = {
     document.getElementById('listProducts').innerHTML = '';
     let cookie = checkACookieExists('basket');
     if (cookie != false) {
-      
       /* ---------------------------------- loop ---------------------------------- */
       cookie.forEach((element) => {
         //nbr total of objects
