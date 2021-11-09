@@ -24,7 +24,7 @@ const basket = {
       typeof document.getElementById('basket') == 'undefined' ||
       document.getElementById('basket') == null
     )
-    exit();
+    return;
     /* ----------------------------- init the cookie ---------------------------- */
     let cookie = checkACookieExists('basket');
     if (cookie == false) cookie = [];
