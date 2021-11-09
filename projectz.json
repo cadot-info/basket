@@ -1,8 +1,8 @@
 {
-    "title": "Like library",
+    "title": "basket library",
     "name": "cadot-info-like",
     "homepage": "https://github.com/cadot-info/like",
-    "description": "A javascript like with cookies and ajax possibility",
+    "description": "A javascript basket with cookies and create html",
     "license": "MIT",
     "author": "2021+ Cadot.info ltd <npm@cadot.info> (https://cadot.info)",
     "maintainers": [
@@ -14,7 +14,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/cadot-info/like.git"
+        "url": "https://github.com/cadot-info/basket.git"
     },
     "badges": {
         "list": [

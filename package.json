@@ -1,7 +1,7 @@
 {
-  "name": "cadot-info-like",
-  "version": "2.0.3",
-  "description": "A javascript like with cookies and ajax possibility",
+  "name": "cadot-info-basket",
+  "version": "1.0.2",
+  "description": "A javascript basket with cookies and create html basket",
   "author": "2021+ Cadot.info ltd <npm@cadot.info> (https://cadot.info)",
   "license": "MIT",
   "main": "src/index.js",
