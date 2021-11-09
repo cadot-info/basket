@@ -132,8 +132,8 @@ const basket = {
       let index = -1;
       let num = 0;
       cookie.forEach((element) => {
-        num += 1;
         if (element.id == objet.dataset.id) index = num;
+        num += 1;
       });
       if (index !== -1) {
         //if it is already in the list
