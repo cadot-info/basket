@@ -7,9 +7,11 @@
   </head>
   <body>
     <div id="root">
-      <h1>Basket<span id="nbrProducts"></span></h1>
-      <ul id="listProducts"></ul>
-      <p id="totalProducts"></p>
+      <h1>Basket<span id="nbrProducts"></span><span id="nbrTotalProducts"></span></h1>
+      <ul id="listProducts">
+        <li><span class="productName"></span><span class="productQuantity"></span><span class="productOpts"></span><span class="productPrice"></span></li>
+      </ul>
+      <p id="totalPriceProducts"></p>
     </div>
     <h2>Products</h2>
         <button
@@ -17,7 +19,7 @@
           data-id="prod-1"
           data-name="Flour of corn"
           data-price="12.12"
-          data-opts='{"¤delivered":"4 days","color":["green","red"]}'
+          data-opts='{"¤delivered":"4 days","color":"green"}'
           >Flour</button>
           <button data-id="prod-1" class="remBasket">remove</button>
         <button
@@ -25,7 +27,7 @@
           data-id="prod-2"
           data-name="honey best quality"
           data-price="3.33"
-          data-opts='{"¤delivered":"Immediatly","color":["green","red"]}'
+          data-opts='{"¤delivered":"Immediatly","color":"red"}'
           >honey</button>
           <button data-id="prod-2" class="remBasket">remove</button>
         <button
@@ -33,7 +35,7 @@
           data-id="prod-3"
           data-name="wine bordeaux 2016"
           data-price="1.11"
-          data-opts='{"¤warning":"allergen sulfite"}'
+          data-opts='{"¤warning":"allergen sulfite","¤color":"purple"}'
           >wine</button>
           <button data-id="prod-3" class="remBasket">remove</button>
 
