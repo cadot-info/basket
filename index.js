@@ -180,7 +180,7 @@ const basket = {
           if (e.charAt(0) == '¤') res += e.substring(1) + ',';
         }
         lineFull.getElementsByClassName('productOpts')[0].innerHTML = res.substring(0, res.length - 1);
-        lineFull.getElementsByClassName('productPrice')[0].innerHTML = element.quantity * element.price;
+        lineFull.getElementsByClassName('productPrice')[0].innerHTML = (element.quantity * element.price).toFixed(2);
         totalprice += element.quantity * element.price;
 
         document.getElementById('listProducts').appendChild(lineFull);
