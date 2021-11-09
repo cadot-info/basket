@@ -1,5 +1,3 @@
-const { existsSync } = require("fs");
-const { exit } = require("process");
 
 var ButtonAddClass, ButtonRemClass, IdnbrProducts, ClassList, IdtotalProducts, IdnbrTotalProducts, lineobjet;
 
@@ -26,7 +24,7 @@ const basket = {
       typeof document.getElementById('basket') == 'undefined' ||
       document.getElementById('basket') == null
     )
-    exit;
+    exit();
     /* ----------------------------- init the cookie ---------------------------- */
     let cookie = checkACookieExists('basket');
     if (cookie == false) cookie = [];
