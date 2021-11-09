@@ -1,6 +1,6 @@
 <!-- TITLE/ -->
 
-<h1>Like library</h1>
+<h1>Basket library with cookie</h1>
 
 <!-- /TITLE -->
 
