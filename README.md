@@ -9,6 +9,7 @@
 
 <span class="badge-npmversion"><a href="https://npmjs.org/package/cadot-info-basket" title="View this project on NPM"><img src="https://img.shields.io/npm/v/cadot-info-basket.svg" alt="NPM version" /></a></span>
 <span class="badge-npmdownloads"><a href="https://npmjs.org/package/cadot-info-basket" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/cadot-info-basket.svg" alt="NPM downloads" /></a></span>
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/Naereen/badges)
 <br class="badge-separator" />
 <span class="badge-paypal"><a href="https://www.paypal.com/donate?hosted_button_id=E9S29AEA3HGXQ" title="Donate to this project using Paypal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" /></a></span>
 
