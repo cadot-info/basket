@@ -24,6 +24,8 @@ A javascript basket with cookies and create html, install and use in 5 minutes!
 # Install
 
 `npm install --save cadot-info-basket`
+or
+`yarn add cadot-info-basket`
 
 ## Usage
 
