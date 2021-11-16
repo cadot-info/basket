@@ -1,6 +1,6 @@
 <!-- TITLE/ -->
 
-<h1>basket library</h1>
+<h1>A javascript basket with cookies and create html, install and use in 5 minutes!</h1>
 
 <!-- /TITLE -->
 
@@ -21,20 +21,9 @@ A javascript basket with cookies and create html, install and use in 5 minutes!
 
 <!-- /DESCRIPTION -->
 
+# Install
 
-<!-- INSTALL/ -->
-
-<h2>Install</h2>
-
-<a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>npm</h3></a>
-<ul>
-<li>Install: <code>npm install --save cadot-info-basket</code></li>
-<li>Import: <code>import * as pkg from ('cadot-info-basket')</code></li>
-<li>Require: <code>const pkg = require('cadot-info-basket')</code></li>
-</ul>
-
-<!-- /INSTALL -->
-
+`npm install --save cadot-info-basket`
 
 ## Usage
 
